@@ -7,10 +7,12 @@ import {
 import Home from "./Home";
 import Stuff from "./Stuff";
 import Contact from "./Contact";
+
  
 class Main extends Component {
     render() {
       return (
+        
         <HashRouter>
           <div>
             <h1>Lihtne spa rakendus</h1>
@@ -20,6 +22,7 @@ class Main extends Component {
               <li><NavLink to="/contact">Kontakt</NavLink></li>
             </ul>
             <div className="content">
+           
             <Route exact path="/" component={Home}/>
               <Route path="/stuff" component={Stuff}/>
               <Route path="/contact" component={Contact}/>
