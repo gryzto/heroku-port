@@ -51,3 +51,11 @@ ul.header li a {
 .active {
   background-color: #0099FF;
 }
+
+.divL, .divR {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 49%;
+  padding: 10px;
+  margin: 0;
+}
