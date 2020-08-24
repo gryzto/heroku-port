@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+
  
 class Home extends Component {
   render() {
     return (
-      <div>
-        <h2>Hei see on reacti sample projekt :)</h2>
+      <div class="container-fluid">
+  <h2>Esimene lehekülg</h2>
         <p>Cras facilisis urna ornare ex volutpat, et
         convallis erat elementum. Ut aliquam, ipsum vitae
         gravida suscipit, metus dui bibendum est, eget rhoncus nibh
@@ -14,6 +15,7 @@ class Home extends Component {
  
         <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>
       </div>
+
     );
   }
 }
