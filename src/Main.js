@@ -7,6 +7,9 @@ import {
 import Home from "./Home";
 import Stuff from "./Stuff";
 import Contact from "./Contact";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
  
 class Main extends Component {
@@ -14,20 +17,38 @@ class Main extends Component {
       return (
         
         <HashRouter>
-          <div>
-            <h1>Lihtne spa rakendus</h1>
-            <ul className="header">
-              <li><NavLink exact to="/">Kodu</NavLink></li>
-              <li><NavLink to="/stuff">Asjad</NavLink></li>
-              <li><NavLink to="/contact">Kontakt</NavLink></li>
-            </ul>
-            <div className="content">
-           
+          
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="#">React Demo</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+       <li class="nav-link"><NavLink exact to="/">Kodu</NavLink></li>
+       <li class="nav-link"><NavLink to="/stuff">Asjad</NavLink></li>
+       <li class="nav-link"><NavLink to="/contact">Kontakt</NavLink></li>    
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+  </div>
+</div>
+<div className="content">
             <Route exact path="/" component={Home}/>
               <Route path="/stuff" component={Stuff}/>
               <Route path="/contact" component={Contact}/>
-            </div>
-          </div>
+            </div>          
         </HashRouter>
       );
     }
