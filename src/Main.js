@@ -22,7 +22,7 @@ class Main extends Component {
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <a class="navbar-brand" href="#">React Demo</a>
+    <a class="navbar-brand" href="#">Pornograafia ruum</a>
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
        <li class="nav-link"><NavLink exact to="/">Home</NavLink></li>
        <li class="nav-link"><NavLink to="/stuff">About</NavLink></li>
