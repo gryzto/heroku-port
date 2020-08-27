@@ -5,9 +5,10 @@ import {
   HashRouter
 } from "react-router-dom";
 
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+import Home from "./frontend/Home";
+import About from "./frontend/About";
+import Contact from "./frontend/Contact";
+import Login from "./backend/Login"
 import 'bootstrap/dist/css/bootstrap.min.css';
  
 class Main extends Component {
@@ -25,7 +26,8 @@ class Main extends Component {
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
        <li class="nav-link"><NavLink exact to="/">Home</NavLink></li>
        <li class="nav-link"><NavLink to="/stuff">About</NavLink></li>
-       <li class="nav-link"><NavLink to="/contact">Contact</NavLink></li>    
+       <li class="nav-link"><NavLink to="/contact">Contact</NavLink></li> 
+       <li class="nav-link"><NavLink to="/login">Login</NavLink></li>    
     </ul>
   </div>
 </nav>
@@ -35,6 +37,7 @@ class Main extends Component {
             <Route exact path="/" component={Home}/>
               <Route path="/stuff" component={About}/>
               <Route path="/contact" component={Contact}/>
+              <Route path="/login" component={Login}/>
             </div>          
         </HashRouter>
       );
