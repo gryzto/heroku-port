@@ -6,7 +6,7 @@ class Home extends Component {
     return (
       
       <div class="container-fluid">
-      <h2>This is homepage</h2>
+      <h2>This is homepage for gangsters </h2>
   
       </div>
 
